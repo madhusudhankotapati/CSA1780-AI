@@ -1,0 +1,13 @@
+graph = {
+    'WA': ['NT', 'SA'],
+    'NT': ['WA', 'SA', 'Q'],
+    'SA': ['WA', 'NT', 'Q', 'NSW', 'V'],
+    'Q': ['NT', 'SA', 'NSW'],
+    'NSW': ['SA', 'Q', 'V'],
+    'V': ['SA', 'NSW'],
+    'T': []
+}
+colors = ['Red', 'Green', 'Blue']
+
+result = map_coloring(graph, colors)
+print("Map Coloring Result:", result)
